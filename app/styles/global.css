@@ -1,0 +1,49 @@
+:root {
+  --color-shade-1: #fff;
+  --color-shade-2: #e0e0e0;
+  --color-shade-3: #423d3d;
+  --color-shade-4: #303030;
+}
+
+body {
+  margin: 0;
+  color: var(--color-shade-1);
+  background-color: var(--color-shade-4);
+}
+
+a {
+  text-decoration: none;
+  color: currentColor;
+}
+
+a.active {
+  text-decoration: underline;
+}
+
+.leaflet-container {
+  height: 100vh;
+  background-color: var(--color-shade-3) !important;
+}
+
+.inner-shadow {
+  position: absolute;
+  inset: 0;
+  box-shadow: inset 0 0 250px 100px #000, inset 0 0 150px #000;
+  z-index: 410;
+  pointer-events: none;
+}
+
+.sidebar {
+  position: absolute;
+  z-index: 620;
+  right: 30px;
+  top: 90px;
+  width: 300px;
+}
+
+.mouse-position {
+  position: absolute;
+  z-index: 630;
+  right: 30px;
+  bottom: 30px;
+}
